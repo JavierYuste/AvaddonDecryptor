@@ -1,0 +1,3 @@
+[submodule "minidump"]
+	path = minidump
+	url = https://github.com/skelsec/minidump
