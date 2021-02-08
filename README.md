@@ -23,7 +23,7 @@ To do so, you can run 'procdump.exe -ma \<PID\>', where \<PID\> is the PID of th
 
     `python3 main.py -f <encrypted_file> -o <original_file> -d <memory_dump> --folder <folder_to_decrypt>`
 
-Note that decryption of the given folder is done recursively. So, to decrypt the whole system, the <folder_to_decrypt> value should be 'C:\'
+Note that decryption of the given folder is done recursively. So, to decrypt the whole system, the <folder_to_decrypt> value should be 'C:\\'
 
 # Strings decryption
 
