@@ -33,3 +33,18 @@ Note that it was developed for the first versions of Avaddon. Later versions use
 # Credits
 
 searchbin.py is a slightly modified version of https://github.com/Sepero/SearchBin. I have only added a json class to output the results.
+
+# Citing
+
+Details of this work can be found in the [full article](https://arxiv.org/abs/2102.04796 "Avaddon ransomware: an in-depth analysis and decryption of infected systems"):
+
+```
+@misc{yuste2021avaddon,
+      title={Avaddon ransomware: an in-depth analysis and decryption of infected systems}, 
+      author={Javier Yuste and Sergio Pastrana},
+      year={2021},
+      eprint={2102.04796},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR}
+}
+```
