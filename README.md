@@ -36,15 +36,18 @@ searchbin.py is a slightly modified version of https://github.com/Sepero/SearchB
 
 # Citing
 
-Details of this work can be found in the [full article](https://arxiv.org/abs/2102.04796 "Avaddon ransomware: an in-depth analysis and decryption of infected systems"):
+Details of this work can be found in the [full article](https://www.sciencedirect.com/science/article/pii/S0167404821002121). Please cite as:
 
 ```
-@misc{yuste2021avaddon,
-      title={Avaddon ransomware: an in-depth analysis and decryption of infected systems}, 
-      author={Javier Yuste and Sergio Pastrana},
-      year={2021},
-      eprint={2102.04796},
-      archivePrefix={arXiv},
-      primaryClass={cs.CR}
+@article{Yuste2021Avaddon,
+   title = {Avaddon ransomware: An in-depth analysis and decryption of infected systems},
+   journal = {Computers & Security},
+   volume = {109},
+   pages = {102388},
+   year = {2021},
+   issn = {0167-4048},
+   doi = {https://doi.org/10.1016/j.cose.2021.102388},
+   url = {https://www.sciencedirect.com/science/article/pii/S0167404821002121},
+   author = {Javier Yuste and Sergio Pastrana}
 }
 ```
