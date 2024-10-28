@@ -29,6 +29,9 @@ import re
 import signal
 import sys
 import json
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Global variables.
 CONTACT = ("sepero 111 @ gmx . com\n"
@@ -404,7 +407,7 @@ def main():
     args = get_args()  # Get commandline arguments.
     args = verify_args(args)  # Check arguments for sanity, and edit them a bit.
     global report_json
-    report_json = report_json_class("C:/Users/w/PycharmProjects/AvaddonDecryptor/testing.matches")
+    report_json = report_json_class(f"{script_dir}/testing.matches")
     if args.fsearch:  # If filenames were given on the commandline, process them.
         while args.fsearch:  # List of files to search inside.
             try:  # Open a filehandler for the filename.
