@@ -17,6 +17,8 @@ if path not in sys.path:
     sys.path.append(path)
 from minidump.minidumpfile import *
 
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
 # Dump the process with procdump.exe -ma <PID>
 # Pattern to search for (part of the key_data_s structure, in particular alg_id, flags and key_size):
 # 106600000100000020000000
@@ -104,11 +106,11 @@ def get_keys_from_offsets(dump, offsets):
 
 
 def search_pattern(dump, pattern):
-    # TODO: Change these paths
-    subprocess.run(["C:/Users/w/PycharmProjects/AvaddonDecryptor/venv/Scripts/python.exe",
-                    "C:/Users/w/PycharmProjects/AvaddonDecryptor/searchbin.py", "-p", str(pattern),
+    # Fixed TODO, paths relative to main file
+    subprocess.run([f"python.exe",  # remember to activate venv
+                    f"{script_dir}/searchbin.py", "-p", str(pattern),
                     os.path.abspath(dump)], stdout=subprocess.PIPE)
-    with open("C:/Users/w/PycharmProjects/AvaddonDecryptor/testing.matches", "r") as f:
+    with open(f"{script_dir}/testing.matches", "r") as f:
         offsets = json.load(f)
     return offsets['matches']
 
